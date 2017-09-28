@@ -282,7 +282,9 @@ namespace System.Web.OData.Builder
             }
 
             ValidatePropertyNotAlreadyDefinedInBaseTypes(propertyInfo);
-            ValidatePropertyNotAlreadyDefinedInDerivedTypes(propertyInfo);
+
+            //I comment this validity check due to perfomanse issue https://github.com/OData/WebApi/issues/876
+            //ValidatePropertyNotAlreadyDefinedInDerivedTypes(propertyInfo);
 
             // Remove from the ignored properties
             if (RemovedProperties.Any(prop => prop.Name.Equals(propertyInfo.Name)))
