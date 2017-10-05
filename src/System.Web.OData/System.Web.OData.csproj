@@ -538,12 +538,6 @@
     <CodeAnalysisDictionary Include="..\CodeAnalysisDictionary.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="OData\Query\Expressions\PropertyContainer.generated.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>PropertyContainer.generated.cs</LastGenOutput>
