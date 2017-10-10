@@ -22,25 +22,26 @@
   <ItemGroup>
     <Reference Include="Microsoft.OData.Core, Version=7.3.1.10814, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\sln\packages\Microsoft.OData.Core.7.3.1\lib\portable-net45+win8+wpa81\Microsoft.OData.Core.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.OData.Edm, Version=7.3.1.10814, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\sln\packages\Microsoft.OData.Edm.7.3.1\lib\portable-net45+win8+wpa81\Microsoft.OData.Edm.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Spatial, Version=7.3.1.10814, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\sln\packages\Microsoft.Spatial.7.3.1\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Moq">
       <HintPath>..\..\..\sln\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\sln\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+      <HintPath>..\..\..\..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
@@ -143,6 +144,7 @@
     <Compile Include="WebUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
