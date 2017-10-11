@@ -343,6 +343,7 @@ namespace System.Web.OData.Builder
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void DefiningEnumPropertyOnBaseTypeAlreadyPresentInDerivedTypeShouldThrowException()
         {
             // Arrange

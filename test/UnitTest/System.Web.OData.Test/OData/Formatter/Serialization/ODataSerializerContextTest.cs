@@ -117,6 +117,7 @@ namespace System.Web.OData.Formatter.Serialization
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void GetEdmType_ThrowsInvalidOperation_IfEdmObjectGetEdmTypeReturnsNull()
         {
             // Arrange (this code path does not use ODataSerializerContext fields or properties)

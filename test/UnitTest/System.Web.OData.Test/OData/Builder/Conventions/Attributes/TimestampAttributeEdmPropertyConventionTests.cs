@@ -65,6 +65,7 @@ namespace System.Web.OData.Builder.Conventions.Attributes
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void TimestampConvention_DoesntApplyWhenTheAttributeIsAppliedToMultipleProperties_InATypeHierarchy()
         {
             // Arrange

@@ -104,6 +104,7 @@ namespace System.Web.OData
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void GetPropertyValue_ThrowsInvalidOperation_IfEdmObjectGetEdmTypeReturnsNull()
         {
             // Arrange

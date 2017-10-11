@@ -2,6 +2,7 @@
 // Licensed under the MIT License.  See License.txt in the project root for license information.
 
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -316,6 +317,7 @@ namespace System.Web.OData
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void FunctionsWorksOnDateTime()
         {
             // Arrange

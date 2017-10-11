@@ -153,6 +153,7 @@ namespace System.Web.OData.Routing.Conventions
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void Constructor_ThrowsInvalidOperation_IfFailsToParsePathTemplate()
         {
             // Arrange

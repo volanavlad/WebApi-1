@@ -38,6 +38,7 @@ namespace System.Web.OData.Builder
         [InlineData("YourId", "yourId")]
         [InlineData("MyPI", "mypi")]
         [InlineData("YourPI", "yourPI")]
+				[Trait("Priority", "2")]
         public void ToLowerCamelCase_LowerCamelCaser_HasSameBehaviorAsJsonNet(string propertyName, string expectName)
         {
             // Arrange

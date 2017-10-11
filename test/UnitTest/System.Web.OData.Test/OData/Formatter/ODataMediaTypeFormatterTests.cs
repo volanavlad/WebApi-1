@@ -689,6 +689,7 @@ namespace System.Web.OData.Formatter
         }
 
         [Fact]
+				[Trait("Priority", "2")]
         public void WriteToStreamAsync_ThrowsSerializationException_IfEdmTypeIsNull()
         {
             var model = CreateModel();
